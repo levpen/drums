@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SongNotes" load_steps=3 format=3 uid="uid://bt6xtmgihhkxk"]
+
+[ext_resource type="Script" path="res://resources/song_notes.gd" id="1_agb01"]
+
+[sub_resource type="GDScript" id="GDScript_ededh"]
+
+[resource]
+script = ExtResource("1_agb01")
+notes = Array[SubResource("GDScript_ededh")]([null])

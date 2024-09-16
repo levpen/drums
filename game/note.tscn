@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://belqxka7uag53"]
+
+[ext_resource type="Script" path="res://game/note.gd" id="1_xxw8h"]
+[ext_resource type="Texture2D" uid="uid://3ia0cp4sqgt8" path="res://assets/cross_base.png" id="2_nhgbf"]
+
+[node name="Note" type="Node2D"]
+script = ExtResource("1_xxw8h")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(5, 0)
+points = PackedVector2Array(0, 0, 0, 30)
+width = 2.0
+default_color = Color(0.544974, 0.544974, 0.544974, 1)
+round_precision = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_nhgbf")

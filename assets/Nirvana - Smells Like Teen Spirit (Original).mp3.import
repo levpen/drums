@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgttnuwq214rl"
+path="res://.godot/imported/Nirvana - Smells Like Teen Spirit (Original).mp3-08dc52fd45d4d2d553cd16738b56c518.mp3str"
+
+[deps]
+
+source_file="res://assets/Nirvana - Smells Like Teen Spirit (Original).mp3"
+dest_files=["res://.godot/imported/Nirvana - Smells Like Teen Spirit (Original).mp3-08dc52fd45d4d2d553cd16738b56c518.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

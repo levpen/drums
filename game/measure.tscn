@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://de2s4gjxe8x8v"]
+
+[ext_resource type="Script" path="res://game/measure.gd" id="1_1qr3g"]
+
+[node name="Measure" type="VisibleOnScreenEnabler2D"]
+rect = Rect2(0, 0, 640, 205)
+enable_mode = 1
+script = ExtResource("1_1qr3g")
+half_line_height = 25.0
+length = 640.0
+
+[node name="MeasureStart" type="Line2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(5, -2.23319e-05)
+points = PackedVector2Array(0, 0, 0, 205)
+
+[node name="MeasureEnd" type="Line2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(645, -0.00288081)
+points = PackedVector2Array(0, 0, 0, 205)
+
+[node name="Lines" type="Marker2D" parent="."]
+
+[node name="G5" type="Line2D" parent="Lines"]
+position = Vector2(1.11659e-05, 2.5)
+points = PackedVector2Array(0, 0, 640, 0)
+width = 5.0
+
+[node name="D5" type="Line2D" parent="Lines"]
+position = Vector2(0.000234485, 52.5)
+points = PackedVector2Array(0, 0, 640, 0)
+width = 5.0
+
+[node name="B5" type="Line2D" parent="Lines"]
+position = Vector2(0.000457804, 102.5)
+points = PackedVector2Array(0, 0, 640, 0)
+width = 5.0
+
+[node name="G4" type="Line2D" parent="Lines"]
+position = Vector2(0, 152.5)
+points = PackedVector2Array(0, 0, 640, 0)
+width = 5.0
+
+[node name="E4" type="Line2D" parent="Lines"]
+position = Vector2(0, 202.5)
+points = PackedVector2Array(0, 0, 640, 0)
+width = 5.0
+
+[node name="Notes" type="Node2D" parent="."]
+unique_name_in_owner = true

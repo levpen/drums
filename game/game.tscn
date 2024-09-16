@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6c37jvo844mm"]
+
+[ext_resource type="Script" path="res://game/gameplay.gd" id="1_aa6g6"]
+[ext_resource type="PackedScene" uid="uid://da85ru6uaoxn3" path="res://game/song.tscn" id="3_42vtv"]
+[ext_resource type="AudioStream" uid="uid://dltbbprl2wown" path="res://assets/click_120bpm_4-4time_61beats_m35qBN.mp3" id="3_kaxre"]
+[ext_resource type="PackedScene" uid="uid://dks38oaochrdg" path="res://game/song_pattern.tscn" id="3_xwrw2"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_v61c2"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_aa6g6")
+
+[node name="Background" type="Sprite2D" parent="."]
+self_modulate = Color(0.564706, 0.894118, 0.835294, 1)
+position = Vector2(640, 360)
+texture = SubResource("CanvasTexture_v61c2")
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 720)
+
+[node name="Song" parent="." instance=ExtResource("3_42vtv")]
+unique_name_in_owner = true
+stream = ExtResource("3_kaxre")
+bpm = 120
+
+[node name="SongInfo" type="TextEdit" parent="."]
+unique_name_in_owner = true
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 167.0
+offset_bottom = 73.0
+text = "BPM - 117
+"
+
+[node name="SongPattern" parent="." instance=ExtResource("3_xwrw2")]
+unique_name_in_owner = true
+position = Vector2(100, 200)
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(180, 200)
+points = PackedVector2Array(0, 0, 0, 205)
+default_color = Color(0.614745, 0.614745, 0.614745, 1)
